@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<listeners>
+<listener class-name="maven.metra.Listeners"/>
+</listeners>
+  <test name="Tickets">
+  <groups>
+  <run>
+  <include name="ticket"/>
+    </run>
+    </groups>
+    
+    <classes>
+      <class name="maven.metra.main"/>
+    </classes>
+    </test> 
+   
+  
+<test name="Maps">
+   <groups>
+  <run>
+  <include name="Maps"/>
+    </run>
+    </groups> 
+    <classes>
+      <class name="maven.metra.Mapsschedule"/>
+    </classes>
+    </test> 
+    
+ 
+ <test name="UPNorth">
+    <classes>
+      <class name="maven.metra.UPNorth"/>
+    </classes>
+    </test>    
+  <!-- Test -->
+
+</suite> <!-- Suite -->

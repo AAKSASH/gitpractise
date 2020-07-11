@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="maven.metra.Listeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Tickets(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="ticket"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="maven.metra.main">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="driverclose"/>
+          <include name="mainmethod"/>
+        </methods>
+      </class> <!-- maven.metra.main -->
+    </classes>
+  </test> <!-- Tickets(failed) -->
+</suite> <!-- Failed suite [Suite] -->

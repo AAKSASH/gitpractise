@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="25195" started-at="2020-07-05T12:04:07Z" finished-at="2020-07-05T12:04:32Z">
+    <groups>
+      <group name="Maps">
+        <method signature="Mapsschedule.maps()[pri:0, instance:maven.metra.Mapsschedule@236e3f4e]" name="maps" class="maven.metra.Mapsschedule"/>
+      </group> <!-- Maps -->
+      <group name="ticket">
+        <method signature="main.mainmethod()[pri:0, instance:maven.metra.main@7c1e2a9e]" name="mainmethod" class="maven.metra.main"/>
+      </group> <!-- ticket -->
+      <group name="UPnorth">
+        <method signature="UPNorth.unionpacific()[pri:0, instance:maven.metra.UPNorth@87a85e1]" name="unionpacific" class="maven.metra.UPNorth"/>
+      </group> <!-- UPnorth -->
+    </groups>
+    <test name="UPNorth" duration-ms="15090" started-at="2020-07-05T12:04:07Z" finished-at="2020-07-05T12:04:22Z">
+      <class name="maven.metra.UPNorth">
+        <test-method status="PASS" signature="openbrowser(org.testng.ITestContext)[pri:0, instance:maven.metra.UPNorth@87a85e1]" name="openbrowser" is-config="true" duration-ms="12173" started-at="2020-07-05T12:04:07Z" finished-at="2020-07-05T12:04:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1649b0e6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="unionpacific()[pri:0, instance:maven.metra.UPNorth@87a85e1]" name="unionpacific" duration-ms="2167" started-at="2020-07-05T12:04:19Z" finished-at="2020-07-05T12:04:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unionpacific -->
+        <test-method status="PASS" signature="driverclose()[pri:0, instance:maven.metra.UPNorth@87a85e1]" name="driverclose" is-config="true" duration-ms="710" started-at="2020-07-05T12:04:21Z" finished-at="2020-07-05T12:04:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- maven.metra.UPNorth -->
+    </test> <!-- UPNorth -->
+    <test name="Maps" duration-ms="18880" started-at="2020-07-05T12:04:07Z" finished-at="2020-07-05T12:04:26Z">
+      <class name="maven.metra.Mapsschedule">
+        <test-method status="PASS" signature="openbrowser(org.testng.ITestContext)[pri:0, instance:maven.metra.Mapsschedule@236e3f4e]" name="openbrowser" is-config="true" duration-ms="12983" started-at="2020-07-05T12:04:07Z" finished-at="2020-07-05T12:04:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@865dd6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="maps()[pri:0, instance:maven.metra.Mapsschedule@236e3f4e]" name="maps" duration-ms="4982" started-at="2020-07-05T12:04:20Z" finished-at="2020-07-05T12:04:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maps -->
+        <test-method status="PASS" signature="driverclose()[pri:0, instance:maven.metra.Mapsschedule@236e3f4e]" name="driverclose" is-config="true" duration-ms="905" started-at="2020-07-05T12:04:25Z" finished-at="2020-07-05T12:04:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- maven.metra.Mapsschedule -->
+    </test> <!-- Maps -->
+    <test name="Tickets" duration-ms="25195" started-at="2020-07-05T12:04:07Z" finished-at="2020-07-05T12:04:32Z">
+      <class name="maven.metra.main">
+        <test-method status="PASS" signature="openbrowser(org.testng.ITestContext)[pri:0, instance:maven.metra.main@7c1e2a9e]" name="openbrowser" is-config="true" duration-ms="12173" started-at="2020-07-05T12:04:07Z" finished-at="2020-07-05T12:04:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4da4253]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="FAIL" signature="mainmethod()[pri:0, instance:maven.metra.main@7c1e2a9e]" name="mainmethod" duration-ms="11635" started-at="2020-07-05T12:04:19Z" finished-at="2020-07-05T12:04:31Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [$52.05] but found [$52.25]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [$52.05] but found [$52.25]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at maven.metra.main.mainmethod(main.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainmethod -->
+        <test-method status="PASS" signature="driverclose()[pri:0, instance:maven.metra.main@7c1e2a9e]" name="driverclose" is-config="true" duration-ms="718" started-at="2020-07-05T12:04:31Z" finished-at="2020-07-05T12:04:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- maven.metra.main -->
+    </test> <!-- Tickets -->
+  </suite> <!-- Suite -->
+</testng-results>
