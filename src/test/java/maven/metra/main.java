@@ -40,6 +40,7 @@ public static Logger Log=LogManager.getLogger(main.class.getName());
 		context.setAttribute("WebDriver", driver);
 		
 		Log.info("Entered In Main class");
+		System.out.println("hi am just here for testing porpuse");
 
 	}
 
